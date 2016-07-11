@@ -167,8 +167,9 @@ if starWarsCharacters.removeValueForKey("Bounty Hunters") == nil {
  ### 16. We want to print out the names of our _Star Wars_ heroes line-by-line. Unfortunately, the code below isn't working correctly -- nothing gets printed! Can you fix it so that our heroes are printed out? (Again, the code has been commented out so that it doesn't interfere with earlier questions until they have been completed. Start by uncommenting the code, but there's still another bug!)
  */
 
-
- if let heroes = starWarsCharacters["Heros"] {
+//there was a typo in the key, it was "Heros" instead of "Heroes"
+ if let heroes = starWarsCharacters["Heroes"] {
+//    print(heroes) prints out entire array
     for hero in heroes {
         print(hero)
     }
